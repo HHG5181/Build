@@ -1,0 +1,104 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/include_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_register_common">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="普通用户"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#FFF0CD"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:id="@+id/btn_register_common"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#39393C"
+                android:background="@drawable/btn_register"
+                android:text="立即加入"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_register_design">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="设计师、务工"
+                android:textStyle="bold"
+                android:textColor="#FFEAEA"
+                android:textSize="23sp" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_register"
+                android:text="立即加入"
+                android:textColor="#FE7272"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_register_shop">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商家、厂家"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="#7A5820"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_register"
+                android:text="立即加入"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

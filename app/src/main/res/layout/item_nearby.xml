@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="130dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_store_logo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家名称"
+            android:textStyle="bold"
+            android:textColor="@color/text_black_33"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:textSize="10sp"
+                android:textColor="@color/text_black_66"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月售量"
+                android:textSize="10sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/text_black_66"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textSize="10sp"
+                android:textColor="@color/text_black_66"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起送￥200"
+                android:textSize="10sp"
+                android:textColor="@color/text_black_66"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="免费送"
+                android:layout_marginLeft="8dp"
+                android:textSize="8sp"
+                android:textColor="@color/text_black_66"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="16sp"
+            android:textColor="@color/text_black_66"
+            android:text="满减"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="54分钟"
+                android:textSize="10sp"
+                android:textColor="@color/text_black_66"/>
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="3.6km"
+                android:textSize="10sp"
+                android:textColor="@color/text_black_66"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black_66"
+            android:text="平台专送"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</LinearLayout>

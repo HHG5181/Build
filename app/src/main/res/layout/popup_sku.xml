@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_white">
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_black_33"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sku_spec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_goods_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_goods_name"/>
+
+    <TextView
+        android:id="@+id/tv_selected"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#d3d7d4"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@id/tv_total"
+        app:layout_constraintTop_toBottomOf="@+id/rv_sku_spec"
+        android:text="已选规格："
+        android:paddingLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="总计"
+        android:textSize="10sp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_black_33"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="@id/tv_selected"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:text="￥0"
+        android:textColor="@color/red"
+        app:layout_constraintLeft_toRightOf="@id/tv_total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_add_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:text="加入购物车"
+        android:visibility="invisible"
+        android:textColor="@color/red"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
